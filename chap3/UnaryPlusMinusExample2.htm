@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UnaryPlusMinusExample1</title>
+	<script type="text/javascript">
+		
+		var s1= "01";
+		var s2= "1.1";
+		var s3= "z";
+		var b= false;
+		var f= 1.1;
+		var o= {
+			valueOf: function(){
+				return -1;
+			}
+		};
+
+		s1= -s1;
+		s2= -s2;
+		s3= -s3;
+		b= -b;
+		f= -f;
+		o= -o;
+
+		alert(s1);	//-1
+		alert(s2);	//-1.1
+		alert(s3);	//NaN
+		alert(b);	//0
+		alert(f);	//-1.1
+		alert(o);	//1
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

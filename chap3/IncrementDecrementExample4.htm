@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IncrementDecrementExample</title>
+	<script type="text/javascript">
+		
+		var s1= "2";
+		var s2= "z";
+		var b= false;
+		var f= 1.1;
+		var o= {
+			valueOf:function(){
+				return -1;
+			}
+		};
+
+		alert(++s1);	//3
+		alert((++s2));	//NaN
+		alert((++b));	//1	
+		alert((--f));	//0.10000000000000009
+		alert((--o));	//-2
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
