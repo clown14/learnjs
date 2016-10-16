@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArrayEveryAndSomeExample</title>
+	<script type="text/javascript">
+		
+		var numbers= [1,2,3,4,5,4,3,2,1];
+
+		var everyResult= numbers.every(function(item, index, array){
+			return (item > 2);  //false
+
+		});
+
+		alert(everyResult);
+
+		var someResult= numbers.some(function(item, index, array){
+			return (item > 2);	//true
+
+		});
+
+		alert(someResult);
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

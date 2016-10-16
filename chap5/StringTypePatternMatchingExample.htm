@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StringTypePatternMatchingExample</title>
+	<script type="text/javascript">
+		var text= "cat, bat, sat, fat";
+		var pattern= /.at/;
+
+		var matches= text.match(pattern);
+		alert(matches.index);		//0
+		alert(matches[0]);			//cat
+		alert(pattern.lastIndex);	//0
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

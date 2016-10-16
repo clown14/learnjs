@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StringTypePatternMatchingExample</title>
+	<script type="text/javascript">
+		var colorText= "red,blue,green,yellow";
+		var colors1= colorText.split(",");		//["red","blue","green","yellow"]
+		var colors2= colorText.split(",", 2);	//["red","blue"]
+		var colors3= colorText.split(/[^\,]+/);	//["",",",",",",",""]
+
+		alert(colors1);
+		alert(colors2);
+		alert(colors3);
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

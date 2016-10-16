@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RegExpConstructorPropertiesExample</title>
+	<script type="text/javascript">
+		
+		var text= "this has been a short summer";
+		var pattern= /(.)hort/g;
+
+		if(pattern.test(text)){
+			alert(RegExp.input);		//this has been a short summer
+			alert(RegExp.leftContext);	//this has been a
+			alert(RegExp.rightContext);	//summer
+			alert(RegExp.lastMatch);	//short
+			alert(RegExp.lastParen);	//a
+			alert(RegExp.multiline);	//false     ?undefined
+
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

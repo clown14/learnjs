@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ArrayTypeSpliceExample</title>
+	<script type="text/javascript">
+		
+		var colors= ["red","green","blue"];
+		var removed= colors.splice(0,1);
+		alert(colors);		//green,blue
+		alert(removed);		//red
+
+		removed= colors.splice(1, 0, "yellow", "orange");
+		alert(colors);		//green,yellpw,orange,blue
+		alert(removed);		//空数组
+
+		removed= colors.splice(1, 1, "red", "purple");
+		alert(colors);		//green,red,purple,orange,blue
+		alert(removed);		//yellow
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
