@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ThisObjectExample2</title>
+	<script type="text/javascript">
+		var name= "The Window";
+
+		var object= {
+			name: "My Object",
+
+			getNameFunc: function(){
+				var that= this;
+				return function(){
+					return that.name;
+				};
+			}
+		};
+
+		alert(object.getNameFunc()());	//The Window
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

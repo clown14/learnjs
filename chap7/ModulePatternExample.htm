@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ModulePatternExample</title>
+	<script type="text/javascript">
+		var application= function(){
+			var components= new Array();
+
+			components.push(new BaseComponent());
+
+			var app= new BaseComponent();
+
+			app.getComponentCount=function(){
+					return components.length;
+			};
+
+			app.registerComponent= function(component){
+				if (typeof component == "object") {
+					components.push(component);
+				}
+			};
+			
+			return app;
+		}();
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
