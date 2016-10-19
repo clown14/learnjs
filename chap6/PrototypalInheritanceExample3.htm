@@ -1,0 +1,27 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>PrototypalInheritanceExample3</title>
+	<script type="text/javascript">
+	
+
+		var person= {
+			name: "Nicholas",
+			firends: ["Shelby","Court","Van"]
+
+		};
+
+		var anotherPerson= Object.create(person,{
+			name: {
+				value: "Greg"
+			}
+		});
+
+		alert(anotherPerson.name);	//Greg
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

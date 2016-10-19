@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ObjectPropertyNamesExample</title>
+	<script type="text/javascript">
+		function Person(){
+
+		}
+
+		Person.prototype.name= "Nicholas";
+		Person.prototype.age= 29;
+		Person.prototype.job= "Software Engineer";
+		Person.prototype.sayName= function(){
+			alert(this.name);
+
+		};
+
+		var keys= Object.getOwnPropertyNames(Person.prototype);
+		alert(keys);	//constructor,name,age,job,sayName
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
