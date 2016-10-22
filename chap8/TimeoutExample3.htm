@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TimeoutExample3</title>
+	<script type="text/javascript">
+		var num= 0;
+		var max=10;
+
+		function incrementNumber(){
+			num++;
+
+			if (num <max) {
+				setInterval(incrementNumber, 500)
+			}else{
+				alert("Done");
+			}
+		}
+		
+		setTimeout(incrementNumber, 500);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

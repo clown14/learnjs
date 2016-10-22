@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WindowSizeExample</title>
+	<script type="text/javascript">
+		var pageWidth = window.innerWideth,
+			pageHeight = window.innerHeight;
+
+		if (typeof pageWidth != "number") {
+			pageWidth= document.documentElement.clientWidth;
+			pageHeight= document.documentElement.clientHeight;
+		}else{
+			pageWidth= document.body.clientWidth;
+			pageHeight= document.body.clientHeight;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
