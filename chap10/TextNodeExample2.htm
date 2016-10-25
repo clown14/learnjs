@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TextNodeExample2</title>
+</head>
+<body>
+    <div id="myDiv">Hello world!</div>
+
+    <input type="button" value="Change Text" onclick="changeText()">
+
+    <script type="text/javascript">
+        function changeText(){
+            var div = document.getElementById("myDiv");
+            div.firstChild.nodeValue = "Some <strong>other</strong> message";
+        }
+
+    </script>
+
+</script>
+</body>
+</html>

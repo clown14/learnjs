@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TextNodeExample6</title>
+</head>
+<body>
+    <div id="myDiv">Hello world!</div>
+
+    <input type="button" value="Change Text" onclick="splitText()">
+
+    <script type="text/javascript">
+        function splitText(){
+            
+            var element= document.createElement("div");
+            element.className= "message";
+
+            var textNode= document.createTextNode("Hello world!");
+            element.appendChild(textNode);
+        
+            document.body.appendChild(element);
+
+            var newNode= element.firstChild.splitText(5);
+
+            alert(element.firstChild.nodeValue);    //Hello
+            alert(newNode.nodeValue);               // world!
+            alert(element.childNodes.length);       //2
+        }
+      
+    </script>
+
+</body>
+</html>

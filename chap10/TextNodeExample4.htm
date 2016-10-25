@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TextNodeExample4</title>
+</head>
+<body>
+    <div id="myDiv">Hello world!</div>
+
+    <input type="button" value="Change Text" onclick="createText()">
+
+    <script type="text/javascript">
+        function createText(){
+            
+            var element= document.createElement("div");
+            element.className= "message";
+
+            var textNode= document.createTextNode("Hello world!");
+            element.appendChild(textNode);
+
+            var anotherNode= document.createTextNode("Yippee!");
+            element.appendChild(anotherNode);
+            
+
+            document.body.appendChild(element);
+
+        }
+      
+    </script>
+
+</body>
+</html>
